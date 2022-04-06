@@ -1,8 +1,5 @@
 package neoflex.code;
 
-import neoflex.code.converters.TenToSixteen;
-import neoflex.code.converters.TenToTwo;
-import neoflex.code.converters.TwoToTen;
 
 import java.util.Scanner;
 
@@ -17,9 +14,9 @@ public class App {
         Scanner userInputString = new Scanner(System.in);
         String converterNumber = userInputString.nextLine();
         switch (converterNumber) {
-            case "1" -> Engine.resultConverter(userInputString,"1");
-            case "2" -> Engine.resultConverter(userInputString,"2");
-            case "3" -> Engine.resultConverter(userInputString,"3");
+            case "1" -> Engine.resultConverter(userInputString, "1");
+            case "2" -> Engine.resultConverter(userInputString, "2");
+            case "3" -> Engine.resultConverter(userInputString, "3");
             case "0" -> System.out.println();
             default -> throw new RuntimeException("Not found converter");
         }

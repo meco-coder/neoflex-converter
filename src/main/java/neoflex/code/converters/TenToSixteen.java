@@ -2,8 +2,12 @@ package neoflex.code.converters;
 
 public class TenToSixteen {
 
-    public String convertToSixteenFromTen(String usrNumber) {
-        return Integer.toHexString(Integer.parseInt(usrNumber));
+    public final String convertToSixteenFromTen(String usrNumber) {
+        try {
+            return Integer.toHexString(Integer.parseInt(usrNumber));
+        } catch (Exception e) {
+            throw new NumberFormatException("Need number in base-10");
+        }
     }
 
 }
