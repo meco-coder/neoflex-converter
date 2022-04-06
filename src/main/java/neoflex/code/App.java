@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class App {
 
     public static void main(String[] args) {
-        converter();
+        run();
     }
 
-    public static void converter() {
+    public static void run() {
         printMenu();
         Scanner userInputString = new Scanner(System.in);
         String converterNumber = userInputString.nextLine();
