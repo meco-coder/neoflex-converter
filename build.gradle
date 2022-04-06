@@ -1,0 +1,25 @@
+plugins {
+    id 'com.github.ben-manes.versions' version '0.38.0'
+    id 'application'
+    id 'checkstyle'
+}
+application {
+    mainClass = 'neoflex.code.App'
+}
+compileJava {
+    options.release = 16
+}
+repositories {
+    mavenCentral()
+}
+
+checkstyle {
+    toolVersion '8.41'
+}
+run {
+    standardInput = System.in
+}
+
+
+group = 'neoflex.code'
+version = '1.0-SNAPSHOT'

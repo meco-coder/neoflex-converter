@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="8.41">
+<file name="/home/ivan/neoflex-converter/src/main/java/neoflex/code/App.java">
+</file>
+<file name="/home/ivan/neoflex-converter/src/main/java/neoflex/code/Engine.java">
+</file>
+<file name="/home/ivan/neoflex-converter/src/main/java/neoflex/code/converters/TenToSixteen.java">
+</file>
+<file name="/home/ivan/neoflex-converter/src/main/java/neoflex/code/converters/TenToTwo.java">
+</file>
+<file name="/home/ivan/neoflex-converter/src/main/java/neoflex/code/converters/TwoToTen.java">
+</file>
+</checkstyle>
