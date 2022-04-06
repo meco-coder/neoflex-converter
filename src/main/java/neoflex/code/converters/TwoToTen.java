@@ -1,4 +1,4 @@
-package main.java.neoflex.code.converters;
+package neoflex.code.converters;
 
 import java.util.Scanner;
 

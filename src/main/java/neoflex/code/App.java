@@ -1,8 +1,8 @@
-package main.java.neoflex.code;
+package neoflex.code;
 
-import main.java.neoflex.code.converters.TenToSixteen;
-import main.java.neoflex.code.converters.TenToTwo;
-import main.java.neoflex.code.converters.TwoToTen;
+import neoflex.code.converters.TenToSixteen;
+import neoflex.code.converters.TenToTwo;
+import neoflex.code.converters.TwoToTen;
 
 import java.util.Scanner;
 
@@ -20,7 +20,8 @@ public class App {
             case "1" -> TenToSixteen.convertToSixteenFromTen(userInputString);
             case "2" -> TenToTwo.convertToTwoFromTen(userInputString);
             case "3" -> TwoToTen.convertToTenFromTwo(userInputString);
-            default -> System.out.println();
+            case "0" -> System.out.println();
+            default -> throw new RuntimeException();
         }
     }
 
