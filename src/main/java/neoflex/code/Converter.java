@@ -37,10 +37,10 @@ public class Converter {
             case "3" -> System.out.println("Result: " + new BaseTen().convertToTenFromTwo(usrNumber));
             default -> throw new RuntimeException("Not found converter");
         }
-        continuationCheck();
+        continueCheck();
     }
 
-    public final void continuationCheck(){
+    public final void continueCheck(){
         System.out.print("Continue(y/n)?: ");
         String usrAnswer = userInputString.nextLine();
         switch (usrAnswer) {
