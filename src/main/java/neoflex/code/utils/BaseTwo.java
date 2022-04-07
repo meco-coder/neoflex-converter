@@ -1,7 +1,7 @@
-package neoflex.code.converters;
+package neoflex.code.utils;
 
 
-public class TenToTwo {
+public class BaseTwo {
 
     public final String convertToTwoFromTen(String usrNumber) {
         try {

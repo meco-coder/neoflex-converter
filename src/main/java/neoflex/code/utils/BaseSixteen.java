@@ -1,6 +1,6 @@
-package neoflex.code.converters;
+package neoflex.code.utils;
 
-public class TenToSixteen {
+public class BaseSixteen {
 
     public final String convertToSixteenFromTen(String usrNumber) {
         try {

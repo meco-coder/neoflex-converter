@@ -1,6 +1,5 @@
 package neoflex.code;
 
-
 import java.util.Scanner;
 
 public class App {
@@ -13,13 +12,16 @@ public class App {
         printMenu();
         Scanner userInputString = new Scanner(System.in);
         String converterNumber = userInputString.nextLine();
+        Converter converter = new Converter();
+        converter.setUserInputString(userInputString);
         switch (converterNumber) {
-            case "1" -> Engine.resultConverter(userInputString, "1");
-            case "2" -> Engine.resultConverter(userInputString, "2");
-            case "3" -> Engine.resultConverter(userInputString, "3");
+            case "1" -> converter.setConverterNumber("1");
+            case "2" -> converter.setConverterNumber("2");
+            case "3" -> converter.setConverterNumber("3");
             case "0" -> System.out.println();
             default -> throw new RuntimeException("Not found converter");
         }
+        converter.resultConverter();
     }
 
     public static void printMenu() {
