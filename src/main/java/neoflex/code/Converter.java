@@ -28,7 +28,7 @@ public class Converter {
         return converterNumber;
     }
 
-    public final void resultConverter() {
+    public final void runConverter() {
         System.out.print("Your number: ");
         String usrNumber = userInputString.nextLine();
         switch (converterNumber) {
@@ -36,6 +36,17 @@ public class Converter {
             case "2" -> System.out.println("Result: " + new BaseTwo().convertToTwoFromTen(usrNumber));
             case "3" -> System.out.println("Result: " + new BaseTen().convertToTenFromTwo(usrNumber));
             default -> throw new RuntimeException("Not found converter");
+        }
+        continuationCheck();
+    }
+
+    public final void continuationCheck(){
+        System.out.print("Continue(y/n)?: ");
+        String usrAnswer = userInputString.nextLine();
+        switch (usrAnswer) {
+            case "y" -> runConverter();
+            case "n" -> System.out.println();
+            default -> throw new RuntimeException("Please answer \'yes\' or \'no\'");
         }
     }
 

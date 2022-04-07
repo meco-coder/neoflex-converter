@@ -21,7 +21,7 @@ public class App {
             case "0" -> System.out.println();
             default -> throw new RuntimeException("Not found converter");
         }
-        converter.resultConverter();
+        converter.runConverter();
     }
 
     public static void printMenu() {
